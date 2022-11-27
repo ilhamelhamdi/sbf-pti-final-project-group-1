@@ -20,10 +20,11 @@ class ListBook(APIView):
             context = {
                 'status': 200,
                 'message': 'success',
-                'data': BookSerializer(allBook).data
+                'data': BookSerializer(allBook, many=True).data
             }
             return Response(context, status=status.HTTP_200_OK)
-        except:
+        except Exception as e:
+            print(e)
             context = {
                 'status': 500,
                 'message': 'failed'
