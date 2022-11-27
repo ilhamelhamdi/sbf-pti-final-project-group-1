@@ -1,4 +1,29 @@
 # sbf-pti-final-project-group-1
 
-# Start App
-1. nanti wkwk
+# How To Install & Run
+
+1. Clone repository
+
+```
+    git clone 'https://github.com/ilhamelhamdi/sbf-pti-final-project-group-1.git'
+    cd sbf-pti-final-project-group-1
+```
+
+2. Create & run python virtual environment
+
+```
+    python3 -m venv env
+    ./env/Scripts/activate.bat
+```
+
+3. Install all dependencies/modules
+
+```
+    python -m pip install -r requirements.txt
+```
+
+4. Run server
+
+```
+    python manage.py runserver
+```
