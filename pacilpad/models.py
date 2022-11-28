@@ -21,4 +21,4 @@ class Book(models.Model):
     synopsis = models.TextField()
     page = models.IntegerField(validators=[MinValueValidator(1)])
     cover = models.ImageField(upload_to='upload')
-    date = models.DateField()
+    release_date = models.DateField()
